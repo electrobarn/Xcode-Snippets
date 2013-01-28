@@ -5,6 +5,6 @@ The generator script makes some assumptions and is fragile, but the `.codesnippe
 
 ## Installation
 
-A single command issued in `Xcode-Snippets` directory will install the files in ~/Library/Developer/Xcode/UserData/CodeSnippets 
+A single command issued in `Xcode-Snippets` directory will install the files in `~/Library/Developer/Xcode/UserData/CodeSnippets` 
 
 `mkdir -p ~/Library/Developer/Xcode/UserData/CodeSnippets && cp plist/*.codesnippet "$_" `
