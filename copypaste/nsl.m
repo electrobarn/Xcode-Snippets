@@ -1,4 +1,5 @@
 // NSLocalizedString
+// Localization Macro
 // 
 // Platform: All
 // Language: Objective-C
