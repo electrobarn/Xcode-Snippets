@@ -13,8 +13,16 @@ class Snippet:
         except:
             self.summary = ''
 
-        self.platform = platform.split('// Platform: ')[1].strip() # needs checking for Platform: ?
-        self.language = language.split('// Language: ')[1].strip() # needs checking for Language: ?
+        try:
+            self.platform = platform.split('// Platform: ')[1].strip() # needs checking for Platform: ?
+        except:
+            self.platform = ''
+        
+        try:
+            self.language = language.split('// Language: ')[1].strip() # needs checking for Language: ?
+        except:
+            self.language = ''
+        
         try:
             self.scopes = [scope.split('// Completion Scope: ')[1].strip()]
         except:

@@ -3,24 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kvo</string>
+	<string>nsl</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[self willChangeValueForKey:@"&lt;#ivar#&gt;"];
-&lt;#ivar#&gt; = &lt;#newValue#&gt;;
-[self didChangeValueForKey:@"&lt;#ivar#&gt;"];
+	<string>NSLocalizedString(@"&lt;#Message#&gt;", &lt;#Comment#&gt;)
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>kvo</string>
+	<string>nsl</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Use when overriding @synthesized property setter methods</string>
+	<string>Localization Macro</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>KVO Setter</string>
+	<string>NSLocalizedString</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
