@@ -1,4 +1,4 @@
-// Class Continuation
+// Class Extension
 // Anonymous category to define private methods in an implementation
 // 
 // Platform: All
@@ -6,5 +6,5 @@
 // Completion Scope: Top Level
 
 @interface <#Class Name#> ()
-<#Continuation#>
+<#Extension#>
 @end
