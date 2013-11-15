@@ -10,7 +10,7 @@
 		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, assign) &lt;#property type#&gt; &lt;#property name#&gt;
+	<string>@property (assign, nonatomic) &lt;#property type#&gt; &lt;#property name#&gt;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>propa</string>

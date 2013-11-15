@@ -5,4 +5,4 @@
 // Language: Objective-C
 // Completion Scopes: Top Level, Class Interface Methods
 
-@property (nonatomic, assign) <#property type#> <#property name#>
+@property (assign, nonatomic) <#property type#> <#property name#>

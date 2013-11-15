@@ -1,8 +1,8 @@
-// Strong Property
-// Nonatomic strong property definition
+// Weak Property
+// Nonatomic weak property definition
 // 
 // Platform: All
 // Language: Objective-C
 // Completion Scopes: Top Level, Class Interface Methods
 
-@property (nonatomic, strong) <#property type#> <#property name#>
+@property (weak, nonatomic) <#property type#> <#property name#>

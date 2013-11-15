@@ -10,16 +10,16 @@
 		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) &lt;#property type#&gt; &lt;#property name#&gt;
+	<string>@property (weak, nonatomic) &lt;#property type#&gt; &lt;#property name#&gt;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>propw</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Nonatomic strong property definition</string>
+	<string>Nonatomic weak property definition</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Strong Property</string>
+	<string>Weak Property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
