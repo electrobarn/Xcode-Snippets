@@ -3,30 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tvdel</string>
+	<string>xaf</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - UITableViewDelegate
-
-- (void)tableView:(UITableView *)tableView 
-didSelectRowAtIndexPath:(NSIndexPath *)indexPath 
-{
-    &lt;#statements#&gt;
-}
+	<string>XCTAssertFalse(&lt;#expression#&gt;, &lt;#message#&gt;);
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>tvdel</string>
+	<string>xaf</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Placeholders for required UITableViewDelegate protocol methods</string>
+	<string>Assert false for XCTest</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableViewDelegate</string>
+	<string>XCT Assert False</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

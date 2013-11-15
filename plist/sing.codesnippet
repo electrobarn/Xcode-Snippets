@@ -3,30 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tvdel</string>
+	<string>sing</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - UITableViewDelegate
-
-- (void)tableView:(UITableView *)tableView 
-didSelectRowAtIndexPath:(NSIndexPath *)indexPath 
-{
-    &lt;#statements#&gt;
-}
-</string>
+	<string>+ (&lt;#class#&gt; *)sharedObject {
+    static &lt;#class#&gt; *_shared&lt;#class#&gt; = nil;
+    static dispatch_once_t oncePredicate;
+    dispatch_once(&amp;oncePredicate, ^{
+        
+        _shared&lt;#class#&gt; = [[&lt;#class#&gt; alloc] init];
+    });
+    
+    return _shared&lt;#class#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>tvdel</string>
+	<string>sing</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Placeholders for required UITableViewDelegate protocol methods</string>
+	<string>Pattern for dispatch_once-based singleton creation</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableViewDelegate</string>
+	<string>singleton Pattern</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

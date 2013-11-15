@@ -3,30 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tvdel</string>
+	<string>extension</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - UITableViewDelegate
-
-- (void)tableView:(UITableView *)tableView 
-didSelectRowAtIndexPath:(NSIndexPath *)indexPath 
-{
-    &lt;#statements#&gt;
-}
+	<string>@interface &lt;#Class Name#&gt; ()
+&lt;#Extension#&gt;
+@end
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>tvdel</string>
+	<string>extension</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Placeholders for required UITableViewDelegate protocol methods</string>
+	<string>Anonymous category to define private methods in an implementation</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableViewDelegate</string>
+	<string>Class Extension</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

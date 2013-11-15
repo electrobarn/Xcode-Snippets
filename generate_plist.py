@@ -44,15 +44,20 @@ class Snippet:
                 scopes.append('ClassInterfaceMethods')
             elif scope == 'Code Expression':
                 scopes.append('CodeExpression')
+            elif scope == 'Code Expression, Function or Method':
+                scopes.append('CodeExpression')
+                scopes.append('CodeBlock')
             else:
-                print "Unrecognized Scope %s" % scope    
+                print "Unrecognized Scope: %s" % scope    
             
 
         language = 'Xcode.SourceCodeLanguage.Objective-C'
         if self.language == 'Objective-C':
             language = 'Xcode.SourceCodeLanguage.Objective-C'
+        elif self.language == 'C':
+            language = 'Xcode.SourceCodeLanguage.C'
         else:
-            print "Unrecognized Language %s" % self.language
+            print "Unrecognized Language: %s" % self.language
 
         d = {'IDECodeSnippetCompletionPrefix' : self.identifier,
              'IDECodeSnippetCompletionScopes' : scopes,
@@ -82,10 +87,14 @@ destdir = 'plist'
 files = [f for f in os.listdir(sourcedir) if os.path.isfile(os.path.join(sourcedir,f))]
 
 for file in files:
+    if file == '.DS_Store':
+        continue
     f = open(os.path.join(sourcedir, file), 'r')
+    # print file
     lines = f.readlines()
 
-
+    # print lines
+    
     s = Snippet(file, lines[0], lines[1], lines[3], lines[4], lines[5], lines[7:])
     s.plist(destdir)
 

@@ -15,25 +15,27 @@
     return &lt;#number#&gt;;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
+{
     return &lt;#number#&gt;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:&lt;#(UITableViewCellStyle)#&gt; reuseIdentifier:CellIdentifier];
-    }
-        
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:&lt;#reuseIdentifier#&gt; forIndexPath:&lt;#indexPath#&gt;];
+
+    [self configureCell:cell forRowAtIndexPath:indexPath];
+
     return cell;
 }
 
-- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)configureCell:(UITableViewCell *)cell
+    forRowAtIndexPath:(NSIndexPath *)indexPath
+{
     &lt;#statements#&gt;
-}
-</string>
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>tvds</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -41,7 +43,7 @@
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Placeholders for the core table view data source methods</string>
+	<string>Placeholders for required UITableViewDataSource delegate methods</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UITableViewDataSource</string>
 	<key>IDECodeSnippetUserSnippet</key>

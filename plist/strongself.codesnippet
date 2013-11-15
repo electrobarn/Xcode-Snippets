@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__strong __typeof(&amp;*weakSelf)strongSelf = &lt;#weakSelf#&gt;;
+	<string>__strong __typeof(&lt;#weakSelf#&gt;)strongSelf = &lt;#weakSelf#&gt;;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>strongself</string>

@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>#import &lt;MessageUI/MessageUI.h&gt;
 
-- (void)presentModalMailComposerViewController {
+- (void)presentModalMailComposerViewController:(BOOL)animated {
     if ([MFMailComposeViewController canSendMail]) {
         MFMailComposeViewController *composeViewController = [[MFMailComposeViewController alloc] init];
         composeViewController.mailComposeDelegate = self;
@@ -20,7 +20,7 @@
         [composeViewController setMessageBody:&lt;#Body#&gt; isHTML:YES];
         [composeViewController setToRecipients:@[&lt;#Recipients#&gt;]];
 
-        [self presentModalViewController:composeViewController animated:YES];
+        [self presentModalViewController:composeViewController animated:animated];
     } else {
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"&lt;#Cannot Send Mail Message#&gt;", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil] show];
     }
@@ -33,11 +33,14 @@
                         error:(NSError *)error
 {
     if (error) {
-        &lt;#Handle error#&gt;
+        NSLog(@"%@", error);
+
+        &lt;#statements#&gt;
     }
 
     [self dismissModalViewControllerAnimated:YES];
-}</string>
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>mailcomp</string>
 	<key>IDECodeSnippetLanguage</key>
